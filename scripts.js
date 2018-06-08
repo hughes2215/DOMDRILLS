@@ -23,8 +23,8 @@ h3.appendChild(h3text);
 h4.appendChild(h4text);
 h5.appendChild(h5text);
 h6.appendChild(h6text);
-div.appendChild(h1);
 
+div.appendChild(h1);
 div.appendChild(h2);
 div.appendChild(h3);
 div.appendChild(h4);
@@ -38,16 +38,33 @@ h4.className = 'h4';
 h5.className = 'h5';
 h6.className = 'h6';
 
-document.body.appendChild(div);
-let color = ['red','purple','orange','pink','yellow','blue','brown','green']
 
+document.body.appendChild(div);
+
+//button says color change
 let colorbutton = document.createElement('button');
 let buttoncolor = document.createTextNode('Color Change');
 colorbutton.appendChild(buttoncolor);
 document.body.appendChild(colorbutton);
 
-buttoncolor.addEventListener("click", function(){
-    let h1colorchange =
-}
+
+let colortext = document.createTextNode('colorcolor');
+
+//makes color change
+
+
+
+
+colorbutton.addEventListener("dblclick", function(){
+ 
+    let colorforh1 = ["purple","yellow","brown","green","tan","black","red","orange"]; 
+    let colorselector = colorforh1[Math.floor(colorforh1.length * Math.random())];
+   h1.style.color = colorselector;  
+   
 })
+
+
+})
+
+
 
